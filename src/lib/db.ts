@@ -10,7 +10,9 @@ export const saveBook = async (book: Book): Promise<void> => {
 export const getBooks = async (): Promise<Book[]> => {
   const allValues = await values();
   // Filter only our books in case other things are stored
-  return allValues.filter((v: any) => v && v.id && v.type) as Book[];
+  return allValues.filter((v): v is Book => 
+    !!(v && typeof v === 'object' && 'id' in v && 'type' in v)
+  );
 };
 
 export const getBook = async (id: string): Promise<Book | undefined> => {

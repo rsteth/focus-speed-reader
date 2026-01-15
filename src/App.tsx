@@ -17,7 +17,14 @@ function App() {
   };
 
   useEffect(() => {
-    refreshBooks().finally(() => setIsLoading(false));
+    const init = async () => {
+      try {
+        await refreshBooks();
+      } finally {
+        setIsLoading(false);
+      }
+    };
+    init();
   }, []);
 
   const handleAddBook = async (title: string, content: string | ArrayBuffer, type: 'text' | 'epub') => {

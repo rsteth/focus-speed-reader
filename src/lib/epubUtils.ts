@@ -8,7 +8,7 @@ export const extractTextFromEpub = async (epubData: ArrayBuffer): Promise<string
   
   // Iterate through the spine (chapters)
   // Note: This might take a moment for large books
-  // @ts-ignore - epubjs types are incomplete
+  // @ts-expect-error - epubjs types are incomplete
   const spineItems = book.spine.items; 
   
   for (const item of spineItems) {
@@ -19,7 +19,7 @@ export const extractTextFromEpub = async (epubData: ArrayBuffer): Promise<string
       // We need to parse the document to text
       // Check if it's a generic object or Document
       if (doc instanceof Document) {
-         // @ts-ignore
+         // @ts-expect-error - innerText is not on all Document types in these environments
          const text = doc.body.innerText || doc.body.textContent || "";
          const chapterWords = text.trim().split(/\s+/).filter((w: string) => w.length > 0);
          words.push(...chapterWords);
