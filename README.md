@@ -1,6 +1,6 @@
 # focus-speed-reader
 
-minimalist epub speed reader built with react, typescript, and tailwind. uses rapid serial visual presentation (rsvp) to increase reading speed.
+minimalist epub speed reader built with react, typescript, and tailwind. uses rapid serial visual presentation (rsvp) to increase reading speed. idea thanks to BuffedYT (youtube) speed reading videos
 
 ## features
 
