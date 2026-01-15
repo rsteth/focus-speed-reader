@@ -100,11 +100,11 @@ const Reader: React.FC<ReaderProps> = ({ book, onClose, onUpdateProgress }) => {
   const rightPart = currentWord.slice(orpIndex + 1);
 
   return (
-    <div className="flex flex-col h-screen bg-slate-900 text-slate-100">
+    <div className="flex flex-col h-screen bg-zinc-950 text-zinc-100">
       {/* Header */}
-      <div className="flex items-center justify-between p-4 border-b border-slate-800">
+      <div className="flex items-center justify-between p-4 border-b border-zinc-900">
         <h2 className="text-lg font-medium truncate max-w-[70%]">{book.title}</h2>
-        <button onClick={onClose} className="p-2 hover:bg-slate-800 rounded-full">
+        <button onClick={onClose} className="p-2 hover:bg-zinc-900 rounded-full text-zinc-400 hover:text-zinc-100">
           <X className="w-6 h-6" />
         </button>
       </div>
@@ -113,34 +113,47 @@ const Reader: React.FC<ReaderProps> = ({ book, onClose, onUpdateProgress }) => {
       <div className="flex-1 flex flex-col items-center justify-center relative cursor-pointer" onClick={togglePlay}>
         
         {/* Progress Bar Top */}
-        <div className="absolute top-0 left-0 w-full h-1 bg-slate-800">
+        <div className="absolute top-0 left-0 w-full h-1 bg-zinc-900">
             <div 
-                className="h-full bg-blue-500 transition-all duration-300"
+                className="h-full bg-blue-600 transition-all duration-300"
                 style={{ width: `${(index / words.length) * 100}%` }}
             />
         </div>
 
-        {/* Word Display */}
-        <div className="text-6xl md:text-8xl font-mono flex items-baseline tracking-wide select-none">
-            <span className="text-slate-400 text-right w-[1ch]">{/* Spacer or context? */}</span>
-            <span className="text-slate-100">{leftPart}</span>
-            <span className="text-red-500">{middleChar}</span>
-            <span className="text-slate-100">{rightPart}</span>
+        {/* Word Display Container */}
+        <div className="relative w-full max-w-4xl mx-auto flex flex-col items-center justify-center py-20">
+            
+            {/* Reticle Lines */}
+            <div className="absolute top-10 left-1/2 -translate-x-1/2 w-0.5 h-6 bg-zinc-800 rounded-full" />
+            <div className="absolute bottom-10 left-1/2 -translate-x-1/2 w-0.5 h-6 bg-zinc-800 rounded-full" />
+
+            {/* Word Grid */}
+            <div className="grid grid-cols-[1fr_auto_1fr] items-baseline w-full gap-0.5 text-6xl md:text-8xl font-mono select-none">
+                <div className="text-right text-zinc-100 whitespace-nowrap overflow-hidden pr-1">
+                    {leftPart}
+                </div>
+                <div className="text-red-500 font-bold text-center w-[1ch] flex-shrink-0 z-10">
+                    {middleChar}
+                </div>
+                <div className="text-left text-zinc-100 whitespace-nowrap overflow-hidden pl-1">
+                    {rightPart}
+                </div>
+            </div>
         </div>
         
         {/* Context (optional: show previous/next words faded?) */}
-        <div className="mt-8 text-slate-600 text-sm">
+        <div className="mt-12 text-zinc-500 text-sm font-mono">
              Word {index + 1} of {words.length}
         </div>
       </div>
 
       {/* Controls */}
-      <div className="p-6 bg-slate-900 border-t border-slate-800 pb-10 md:pb-6">
+      <div className="p-6 bg-zinc-950 border-t border-zinc-900 pb-10 md:pb-6">
         <div className="flex flex-col gap-4 max-w-2xl mx-auto">
             
             {/* Speed Control */}
             <div className="flex items-center justify-between gap-4">
-                <span className="text-sm text-slate-400">Speed</span>
+                <span className="text-sm text-zinc-500">Speed</span>
                 <input 
                     type="range" 
                     min="60" 
@@ -148,28 +161,28 @@ const Reader: React.FC<ReaderProps> = ({ book, onClose, onUpdateProgress }) => {
                     step="10" 
                     value={wpm} 
                     onChange={(e) => setWpm(Number(e.target.value))}
-                    className="flex-1 h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer"
+                    className="flex-1 h-2 bg-zinc-800 rounded-lg appearance-none cursor-pointer accent-blue-600"
                 />
-                <span className="text-sm font-mono w-16 text-right">{wpm} wpm</span>
+                <span className="text-sm font-mono w-16 text-right text-zinc-400">{wpm} wpm</span>
             </div>
 
             {/* Playback Controls */}
             <div className="flex items-center justify-center gap-6">
-                <button onClick={() => adjustIndex(-10)} className="p-3 hover:bg-slate-800 rounded-full">
+                <button onClick={(e) => { e.stopPropagation(); adjustIndex(-10); }} className="p-3 hover:bg-zinc-900 rounded-full text-zinc-400 hover:text-zinc-100">
                     <Rewind className="w-6 h-6" />
                 </button>
                 
                 <button 
-                    onClick={togglePlay} 
+                    onClick={(e) => { e.stopPropagation(); togglePlay(); }}
                     className={clsx(
                         "p-4 rounded-full transition-colors", 
-                        isPlaying ? "bg-slate-800 text-slate-200" : "bg-blue-600 text-white hover:bg-blue-500"
+                        isPlaying ? "bg-zinc-800 text-zinc-200" : "bg-blue-600 text-white hover:bg-blue-500"
                     )}
                 >
                     {isPlaying ? <Pause className="w-8 h-8" /> : <Play className="w-8 h-8 ml-1" />}
                 </button>
 
-                <button onClick={() => adjustIndex(10)} className="p-3 hover:bg-slate-800 rounded-full">
+                <button onClick={(e) => { e.stopPropagation(); adjustIndex(10); }} className="p-3 hover:bg-zinc-900 rounded-full text-zinc-400 hover:text-zinc-100">
                     <FastForward className="w-6 h-6" />
                 </button>
             </div>

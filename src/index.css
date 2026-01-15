@@ -16,5 +16,5 @@ body {
   padding: 0;
   min-width: 320px;
   min-height: 100vh;
-  @apply bg-slate-900 text-slate-100;
+  @apply bg-zinc-950 text-zinc-100;
 }

@@ -56,10 +56,10 @@ function App() {
     refreshBooks(); // Ensure list is up to date with progress
   };
 
-  if (isLoading) return <div className="h-screen flex items-center justify-center bg-slate-900 text-slate-500">Loading Library...</div>;
+  if (isLoading) return <div className="h-screen flex items-center justify-center bg-zinc-950 text-zinc-500">Loading Library...</div>;
 
   return (
-    <div className="min-h-screen bg-slate-900 text-slate-100 font-sans">
+    <div className="min-h-screen bg-zinc-950 text-zinc-100 font-sans">
       {activeBook ? (
         <Reader 
           book={activeBook} 
