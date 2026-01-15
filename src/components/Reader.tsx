@@ -18,6 +18,19 @@ const Reader: React.FC<ReaderProps> = ({ book, onClose, onUpdateProgress }) => {
   const [wpm, setWpm] = useState(book.settings?.wpm || 300);
   
   const timerRef = useRef<number | null>(null);
+  const progressBarRef = useRef<HTMLDivElement>(null);
+
+  const handleProgressBarClick = (e: React.MouseEvent<HTMLDivElement>) => {
+    e.stopPropagation();
+    if (!progressBarRef.current || words.length === 0) return;
+
+    const rect = progressBarRef.current.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const percentage = Math.max(0, Math.min(1, x / rect.width));
+    const newIndex = Math.floor(percentage * words.length);
+    
+    setIndex(newIndex);
+  };
 
   // Load Content
   useEffect(() => {
@@ -113,9 +126,13 @@ const Reader: React.FC<ReaderProps> = ({ book, onClose, onUpdateProgress }) => {
       <div className="flex-1 flex flex-col items-center justify-center relative cursor-pointer" onClick={togglePlay}>
         
         {/* Progress Bar Top */}
-        <div className="absolute top-0 left-0 w-full h-1 bg-zinc-900">
+        <div 
+            ref={progressBarRef}
+            className="absolute top-0 left-0 w-full h-2 bg-zinc-800 cursor-pointer z-10 hover:h-4 transition-all duration-200"
+            onClick={handleProgressBarClick}
+        >
             <div 
-                className="h-full bg-blue-600 transition-all duration-300"
+                className="h-full bg-blue-600 transition-all duration-100 ease-out"
                 style={{ width: `${(index / words.length) * 100}%` }}
             />
         </div>
