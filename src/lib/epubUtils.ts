@@ -19,8 +19,7 @@ export const extractTextFromEpub = async (epubData: ArrayBuffer): Promise<string
       // We need to parse the document to text
       // Check if it's a generic object or Document
       if (doc instanceof Document) {
-         // @ts-expect-error - innerText is not on all Document types in these environments
-         const text = doc.body.innerText || doc.body.textContent || "";
+         const text = doc.body?.innerText || doc.body?.textContent || "";
          const chapterWords = text.trim().split(/\s+/).filter((w: string) => w.length > 0);
          words.push(...chapterWords);
       } else {
