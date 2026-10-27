@@ -51,13 +51,22 @@ export const importLibrary = async (json: string): Promise<void> => {
     const books = JSON.parse(json);
     if (!Array.isArray(books)) throw new Error("Invalid library format");
 
-    for (const book of books) {
-      if (typeof book.content === 'string' && book.content.startsWith('base64:')) {
-        const base64 = book.content.replace('base64:', '');
-        book.content = base64ToArrayBuffer(base64);
+    // Validate and decode the entire backup before writing any records.
+    const decoded = books.map((book): Book => {
+      if (!book || typeof book !== 'object' || typeof book.id !== 'string' || !book.id ||
+          typeof book.title !== 'string' || !book.title.trim() ||
+          !['text', 'epub'].includes(book.type) || typeof book.content !== 'string' ||
+          !Number.isFinite(book.progress) || book.progress < 0 || !Number.isInteger(book.progress) ||
+          !Number.isFinite(book.createdAt) || !Number.isFinite(book.lastReadAt)) {
+        throw new Error('Invalid book in backup');
       }
-      await saveBook(book);
-    }
+      if (book.type === 'epub') {
+        if (!book.content.startsWith('base64:')) throw new Error('Invalid EPUB backup');
+        return { ...book, content: base64ToArrayBuffer(book.content.slice(7)) };
+      }
+      return book;
+    });
+    for (const book of decoded) await saveBook(book);
   } catch (e) {
     console.error("Failed to import library", e);
     throw e;

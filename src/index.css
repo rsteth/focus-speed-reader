@@ -18,3 +18,14 @@ body {
   min-height: 100vh;
   @apply bg-zinc-950 text-zinc-100;
 }
+
+.reader-shell {
+  min-height: 100vh;
+  min-height: 100dvh;
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+.reader-progress { margin: 0; height: 16px; }
+@media (min-height: 480px) {
+  .reader-shell { height: 100vh; height: 100dvh; }
+}

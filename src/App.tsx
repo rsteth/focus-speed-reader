@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import Library from './components/Library';
 import Reader from './components/Reader';
 import type { Book } from './types';
@@ -49,14 +49,14 @@ function App() {
     }
   };
 
-  const handleUpdateProgress = async (id: string, progress: number) => {
+  const handleUpdateProgress = useCallback(async (id: string, progress: number) => {
     await updateProgress(id, progress);
     // Update local state without full refresh if possible for smoothness,
     // but usually refresh is fast enough.
     // Let's update the active book object too so it stays in sync if we close and reopen
     // Actually we only update when closing or pausing.
     setBooks(prev => prev.map(b => b.id === id ? { ...b, progress, lastReadAt: Date.now() } : b));
-  };
+  }, []);
 
   const handleCloseReader = () => {
     setActiveBook(null);

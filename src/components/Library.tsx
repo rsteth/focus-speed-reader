@@ -20,20 +20,21 @@ const Library: React.FC<LibraryProps> = ({ books, onOpen, onAdd, onDelete, onRef
   const [isProcessing, setIsProcessing] = useState(false);
 
   const handleAdd = async () => {
-    if (!newTitle) return;
+    if (!newTitle.trim()) { alert('Enter a title.'); return; }
+    if (inputType === 'paste' && !textInput.trim()) { alert('Enter some text.'); return; }
+    if (inputType === 'file' && !fileInputRef.current?.files?.length) { alert('Choose an EPUB or text file.'); return; }
     setIsProcessing(true);
     try {
         if (inputType === 'paste') {
-            await onAdd(newTitle, textInput, 'text');
+            await onAdd(newTitle.trim(), textInput, 'text');
         } else {
             const file = fileInputRef.current?.files?.[0];
             if (file) {
-                const buffer = await file.arrayBuffer();
-                // Basic check, usually epubs are application/epub+zip, but extension check is easiest
-                const isEpub = file.name.endsWith('.epub');
-                await onAdd(newTitle, buffer, isEpub ? 'epub' : 'text'); // Fallback logic?
-                // Actually if it's not epub, we probably should read as text.
-                // But for now, let's assume file upload is for EPUBs as requested.
+                const isEpub = /\.epub$/i.test(file.name);
+                if (!isEpub && !/\.txt$/i.test(file.name)) throw new Error('Unsupported file');
+                const content = isEpub ? await file.arrayBuffer() : await file.text();
+                if (typeof content === 'string' && !content.trim()) throw new Error('Empty file');
+                await onAdd(newTitle.trim(), content, isEpub ? 'epub' : 'text');
             }
         }
         setIsAdding(false);
@@ -56,7 +57,10 @@ const Library: React.FC<LibraryProps> = ({ books, onOpen, onAdd, onDelete, onRef
           const a = document.createElement('a');
           a.href = url;
           a.download = `speed-reader-backup-${new Date().toISOString().slice(0,10)}.json`;
+          document.body.appendChild(a);
           a.click();
+          a.remove();
+          window.setTimeout(() => URL.revokeObjectURL(url), 1000);
       } catch (e) {
           console.error(e);
           alert("Export failed");
@@ -83,17 +87,17 @@ const Library: React.FC<LibraryProps> = ({ books, onOpen, onAdd, onDelete, onRef
 
   return (
     <div className="p-4 md:p-8 max-w-5xl mx-auto">
-      <div className="flex items-center justify-between mb-8">
-        <h1 className="text-3xl font-bold text-blue-500">Focus Speed Reader</h1>
+      <div className="flex items-center justify-between flex-wrap gap-4 mb-8">
+        <h1 className="text-2xl md:text-3xl font-bold text-blue-500">Focus Speed Reader</h1>
         <div className="flex gap-2">
-            <label className="p-2 bg-zinc-900 rounded hover:bg-zinc-800 cursor-pointer" title="Import JSON">
-                <Upload className="w-5 h-5" />
+            <label className="p-2 bg-zinc-900 rounded hover:bg-zinc-800 cursor-pointer" title="Restore library from JSON backup">
+                <Upload className="w-5 h-5 inline-block" /><span className="ml-2">Restore</span>
                 <input type="file" accept=".json" onChange={handleImport} className="hidden" />
             </label>
-            <button onClick={handleExport} className="p-2 bg-zinc-900 rounded hover:bg-zinc-800" title="Export JSON">
-                <Download className="w-5 h-5" />
+            <button onClick={handleExport} className="p-2 bg-zinc-900 rounded hover:bg-zinc-800" title="Download library backup (JSON)" disabled={!books.length || isProcessing} aria-label="Download library backup (JSON)">
+                <Download className="w-5 h-5 inline-block" /><span className="ml-2">Back up</span>
             </button>
-            <button onClick={() => setIsAdding(!isAdding)} className="flex items-center gap-2 px-4 py-2 bg-blue-600 rounded hover:bg-blue-500">
+            <button aria-label="Add Book" onClick={() => setIsAdding(!isAdding)} className="flex items-center gap-2 px-4 py-2 bg-blue-600 rounded hover:bg-blue-500">
                 <Plus className="w-5 h-5" />
                 <span className="hidden md:inline">Add Book</span>
             </button>
@@ -123,7 +127,7 @@ const Library: React.FC<LibraryProps> = ({ books, onOpen, onAdd, onDelete, onRef
                         className={`pb-2 ${inputType === 'file' ? 'text-blue-400 border-b-2 border-blue-400' : 'text-zinc-400'}`}
                         onClick={() => setInputType('file')}
                     >
-                        Upload File (EPUB)
+                        Upload File (EPUB or TXT)
                     </button>
                 </div>
 
@@ -136,8 +140,8 @@ const Library: React.FC<LibraryProps> = ({ books, onOpen, onAdd, onDelete, onRef
                     />
                 ) : (
                     <div className="p-8 border-2 border-dashed border-zinc-800 rounded flex flex-col items-center justify-center text-zinc-400 bg-zinc-950">
-                        <input type="file" accept=".epub" ref={fileInputRef} className="mb-2" />
-                        <span className="text-xs">Supports .epub files</span>
+                        <input type="file" accept=".epub,.txt" ref={fileInputRef} className="mb-2 max-w-full" />
+                        <span className="text-xs">Supports .epub and .txt files</span>
                     </div>
                 )}
 
@@ -165,7 +169,7 @@ const Library: React.FC<LibraryProps> = ({ books, onOpen, onAdd, onDelete, onRef
                     </div>
                     <button 
                         onClick={(e) => { e.stopPropagation(); onDelete(book.id); }}
-                        className="p-2 text-zinc-500 hover:text-red-400 opacity-0 group-hover:opacity-100 transition-opacity"
+                        aria-label={`Delete ${book.title}`} className="p-2 text-zinc-500 hover:text-red-400 md:opacity-0 group-hover:opacity-100 focus:opacity-100 transition-opacity"
                     >
                         <Trash2 className="w-4 h-4" />
                     </button>
