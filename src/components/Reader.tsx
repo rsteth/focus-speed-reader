@@ -1,3 +1,4 @@
+import AppearanceControls from './AppearanceControls';
 import { useState, useEffect, useLayoutEffect, useRef } from 'react';
 import type { Book } from '../types';
 import { extractTextFromEpub } from '../lib/epubUtils';
@@ -40,7 +41,7 @@ function WordDisplay({ word }: { word: string }) {
   return <div ref={container} className="relative w-full font-mono select-none" style={{ fontSize }} aria-label={word} data-testid="word">
     <div className="relative h-[1.5em] whitespace-nowrap">
       <span className="absolute right-[calc(50%+0.5ch)]">{left}</span>
-      <span className="absolute left-1/2 -translate-x-1/2 w-[1ch] text-center text-red-500">{middle}</span>
+      <span className="absolute left-1/2 -translate-x-1/2 w-[1ch] text-center text-red-500 reader-focus">{middle}</span>
       <span className="absolute left-[calc(50%+0.5ch)]">{right}</span>
     </div>
   </div>;
@@ -116,7 +117,7 @@ const Reader: React.FC<ReaderProps> = ({ book, onClose, onUpdateProgress }) => {
     <header className="shrink-0 p-4 border-b border-zinc-900">
       <div className="flex items-center justify-between gap-4">
         <h2 className="min-w-0 text-lg font-medium truncate">{book.title}</h2>
-        <button onClick={closeReader} aria-label="Close reader" title="Close reader" className="p-2 shrink-0 hover:bg-zinc-900 rounded-full text-zinc-400 hover:text-zinc-100"><X className="w-6 h-6" /></button>
+        <div className="flex items-center gap-2 shrink-0"><AppearanceControls onOpen={() => setIsPlaying(false)} /><button onClick={closeReader} aria-label="Close reader" title="Close reader" className="p-2 shrink-0 hover:bg-zinc-900 rounded-full text-zinc-400 hover:text-zinc-100"><X className="w-6 h-6" /></button></div>
       </div>
       <div className="text-center text-zinc-500 text-sm font-mono" data-testid="position">Word {words.length ? index + 1 : 0} of {words.length}</div>
     </header>

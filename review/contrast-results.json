@@ -1,0 +1,1546 @@
+[
+  {
+    "theme": "light",
+    "palette": "standard",
+    "checks": [
+      {
+        "selector": ".reader-shell h2",
+        "foreground": "rgb(48, 46, 40)",
+        "background": "rgb(246, 243, 235)",
+        "ratio": 12.241137536512081,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".reader-shell h2",
+        "foreground": "rgb(48, 46, 40)",
+        "background": "rgb(255, 253, 247)",
+        "ratio": 13.344325424732025,
+        "minimum": 4.5
+      },
+      {
+        "selector": "[data-testid=\"position\"]",
+        "foreground": "rgb(93, 96, 84)",
+        "background": "rgb(246, 243, 235)",
+        "ratio": 5.797601324113662,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".reader-focus",
+        "foreground": "rgb(155, 66, 45)",
+        "background": "rgb(246, 243, 235)",
+        "ratio": 5.898187301490681,
+        "minimum": 4.5
+      },
+      {
+        "selector": "footer label span",
+        "foreground": "rgb(93, 96, 84)",
+        "background": "rgb(246, 243, 235)",
+        "ratio": 5.797601324113662,
+        "minimum": 4.5
+      },
+      {
+        "selector": "footer label span",
+        "foreground": "rgb(93, 96, 84)",
+        "background": "rgb(246, 243, 235)",
+        "ratio": 5.797601324113662,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".appearance-dialog p",
+        "foreground": "rgb(48, 46, 40)",
+        "background": "rgb(255, 253, 247)",
+        "ratio": 13.344325424732025,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".appearance-dialog p",
+        "foreground": "rgb(93, 96, 84)",
+        "background": "rgb(255, 253, 247)",
+        "ratio": 6.320089004887854,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".appearance-dialog legend",
+        "foreground": "rgb(48, 46, 40)",
+        "background": "rgb(255, 253, 247)",
+        "ratio": 13.344325424732025,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".palette-option span",
+        "foreground": "rgb(48, 46, 40)",
+        "background": "rgb(255, 253, 247)",
+        "ratio": 13.344325424732025,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".palette-option span",
+        "foreground": "rgb(48, 46, 40)",
+        "background": "rgb(255, 253, 247)",
+        "ratio": 13.344325424732025,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".palette-option span",
+        "foreground": "rgb(48, 46, 40)",
+        "background": "rgb(255, 253, 247)",
+        "ratio": 13.344325424732025,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".palette-option span",
+        "foreground": "rgb(48, 46, 40)",
+        "background": "rgb(255, 253, 247)",
+        "ratio": 13.344325424732025,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".system-theme",
+        "foreground": "rgb(48, 46, 40)",
+        "background": "rgb(255, 253, 247)",
+        "ratio": 13.344325424732025,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".appearance-close",
+        "foreground": "rgb(255, 255, 255)",
+        "background": "rgb(69, 96, 68)",
+        "ratio": 6.977529430526338,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".appearance-icon border",
+        "ratio": 4.359316233609269,
+        "minimum": 3
+      },
+      {
+        "selector": "focus underline",
+        "ratio": 5.898187301490681,
+        "minimum": 3
+      }
+    ],
+    "libraryChecks": [
+      {
+        "selector": "h1",
+        "ratio": 6.292546889964551,
+        "minimum": 4.5
+      },
+      {
+        "selector": "h3",
+        "ratio": 13.344325424732025,
+        "minimum": 4.5
+      },
+      {
+        "selector": "h3",
+        "ratio": 13.344325424732025,
+        "minimum": 4.5
+      },
+      {
+        "selector": "button",
+        "ratio": 13.344325424732025,
+        "minimum": 4.5
+      },
+      {
+        "selector": "button",
+        "ratio": 6.977529430526338,
+        "minimum": 4.5
+      },
+      {
+        "selector": "button",
+        "ratio": 6.859639735246227,
+        "minimum": 4.5
+      },
+      {
+        "selector": "button",
+        "ratio": 6.320089004887854,
+        "minimum": 4.5
+      },
+      {
+        "selector": "button",
+        "ratio": 6.320089004887854,
+        "minimum": 4.5
+      },
+      {
+        "selector": "button",
+        "ratio": 6.977529430526338,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".text-zinc-400",
+        "ratio": 6.320089004887854,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".text-zinc-400",
+        "ratio": 6.320089004887854,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".text-zinc-400",
+        "ratio": 6.320089004887854,
+        "minimum": 4.5
+      },
+      {
+        "selector": "[placeholder]",
+        "ratio": 5.797601324113662,
+        "minimum": 4.5
+      },
+      {
+        "selector": "[placeholder]",
+        "ratio": 5.797601324113662,
+        "minimum": 4.5
+      }
+    ]
+  },
+  {
+    "theme": "light",
+    "palette": "red-green",
+    "checks": [
+      {
+        "selector": ".reader-shell h2",
+        "foreground": "rgb(48, 46, 40)",
+        "background": "rgb(246, 243, 235)",
+        "ratio": 12.241137536512081,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".reader-shell h2",
+        "foreground": "rgb(48, 46, 40)",
+        "background": "rgb(255, 253, 247)",
+        "ratio": 13.344325424732025,
+        "minimum": 4.5
+      },
+      {
+        "selector": "[data-testid=\"position\"]",
+        "foreground": "rgb(93, 96, 84)",
+        "background": "rgb(246, 243, 235)",
+        "ratio": 5.797601324113662,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".reader-focus",
+        "foreground": "rgb(156, 68, 0)",
+        "background": "rgb(246, 243, 235)",
+        "ratio": 5.844415150522585,
+        "minimum": 4.5
+      },
+      {
+        "selector": "footer label span",
+        "foreground": "rgb(93, 96, 84)",
+        "background": "rgb(246, 243, 235)",
+        "ratio": 5.797601324113662,
+        "minimum": 4.5
+      },
+      {
+        "selector": "footer label span",
+        "foreground": "rgb(93, 96, 84)",
+        "background": "rgb(246, 243, 235)",
+        "ratio": 5.797601324113662,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".appearance-dialog p",
+        "foreground": "rgb(48, 46, 40)",
+        "background": "rgb(255, 253, 247)",
+        "ratio": 13.344325424732025,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".appearance-dialog p",
+        "foreground": "rgb(93, 96, 84)",
+        "background": "rgb(255, 253, 247)",
+        "ratio": 6.320089004887854,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".appearance-dialog legend",
+        "foreground": "rgb(48, 46, 40)",
+        "background": "rgb(255, 253, 247)",
+        "ratio": 13.344325424732025,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".palette-option span",
+        "foreground": "rgb(48, 46, 40)",
+        "background": "rgb(255, 253, 247)",
+        "ratio": 13.344325424732025,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".palette-option span",
+        "foreground": "rgb(48, 46, 40)",
+        "background": "rgb(255, 253, 247)",
+        "ratio": 13.344325424732025,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".palette-option span",
+        "foreground": "rgb(48, 46, 40)",
+        "background": "rgb(255, 253, 247)",
+        "ratio": 13.344325424732025,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".palette-option span",
+        "foreground": "rgb(48, 46, 40)",
+        "background": "rgb(255, 253, 247)",
+        "ratio": 13.344325424732025,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".system-theme",
+        "foreground": "rgb(48, 46, 40)",
+        "background": "rgb(255, 253, 247)",
+        "ratio": 13.344325424732025,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".appearance-close",
+        "foreground": "rgb(255, 255, 255)",
+        "background": "rgb(24, 94, 135)",
+        "ratio": 7.023943672889267,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".appearance-icon border",
+        "ratio": 4.359316233609269,
+        "minimum": 3
+      },
+      {
+        "selector": "focus underline",
+        "ratio": 5.844415150522585,
+        "minimum": 3
+      }
+    ],
+    "libraryChecks": [
+      {
+        "selector": "h1",
+        "ratio": 6.334404656289856,
+        "minimum": 4.5
+      },
+      {
+        "selector": "h3",
+        "ratio": 13.344325424732025,
+        "minimum": 4.5
+      },
+      {
+        "selector": "h3",
+        "ratio": 13.344325424732025,
+        "minimum": 4.5
+      },
+      {
+        "selector": "button",
+        "ratio": 13.344325424732025,
+        "minimum": 4.5
+      },
+      {
+        "selector": "button",
+        "ratio": 7.023943672889267,
+        "minimum": 4.5
+      },
+      {
+        "selector": "button",
+        "ratio": 6.905269780144523,
+        "minimum": 4.5
+      },
+      {
+        "selector": "button",
+        "ratio": 6.320089004887854,
+        "minimum": 4.5
+      },
+      {
+        "selector": "button",
+        "ratio": 6.320089004887854,
+        "minimum": 4.5
+      },
+      {
+        "selector": "button",
+        "ratio": 7.023943672889267,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".text-zinc-400",
+        "ratio": 6.320089004887854,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".text-zinc-400",
+        "ratio": 6.320089004887854,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".text-zinc-400",
+        "ratio": 6.320089004887854,
+        "minimum": 4.5
+      },
+      {
+        "selector": "[placeholder]",
+        "ratio": 5.797601324113662,
+        "minimum": 4.5
+      },
+      {
+        "selector": "[placeholder]",
+        "ratio": 5.797601324113662,
+        "minimum": 4.5
+      }
+    ]
+  },
+  {
+    "theme": "light",
+    "palette": "blue-yellow",
+    "checks": [
+      {
+        "selector": ".reader-shell h2",
+        "foreground": "rgb(48, 46, 40)",
+        "background": "rgb(246, 243, 235)",
+        "ratio": 12.241137536512081,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".reader-shell h2",
+        "foreground": "rgb(48, 46, 40)",
+        "background": "rgb(255, 253, 247)",
+        "ratio": 13.344325424732025,
+        "minimum": 4.5
+      },
+      {
+        "selector": "[data-testid=\"position\"]",
+        "foreground": "rgb(93, 96, 84)",
+        "background": "rgb(246, 243, 235)",
+        "ratio": 5.797601324113662,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".reader-focus",
+        "foreground": "rgb(0, 104, 96)",
+        "background": "rgb(246, 243, 235)",
+        "ratio": 6.014050603208217,
+        "minimum": 4.5
+      },
+      {
+        "selector": "footer label span",
+        "foreground": "rgb(93, 96, 84)",
+        "background": "rgb(246, 243, 235)",
+        "ratio": 5.797601324113662,
+        "minimum": 4.5
+      },
+      {
+        "selector": "footer label span",
+        "foreground": "rgb(93, 96, 84)",
+        "background": "rgb(246, 243, 235)",
+        "ratio": 5.797601324113662,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".appearance-dialog p",
+        "foreground": "rgb(48, 46, 40)",
+        "background": "rgb(255, 253, 247)",
+        "ratio": 13.344325424732025,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".appearance-dialog p",
+        "foreground": "rgb(93, 96, 84)",
+        "background": "rgb(255, 253, 247)",
+        "ratio": 6.320089004887854,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".appearance-dialog legend",
+        "foreground": "rgb(48, 46, 40)",
+        "background": "rgb(255, 253, 247)",
+        "ratio": 13.344325424732025,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".palette-option span",
+        "foreground": "rgb(48, 46, 40)",
+        "background": "rgb(255, 253, 247)",
+        "ratio": 13.344325424732025,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".palette-option span",
+        "foreground": "rgb(48, 46, 40)",
+        "background": "rgb(255, 253, 247)",
+        "ratio": 13.344325424732025,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".palette-option span",
+        "foreground": "rgb(48, 46, 40)",
+        "background": "rgb(255, 253, 247)",
+        "ratio": 13.344325424732025,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".palette-option span",
+        "foreground": "rgb(48, 46, 40)",
+        "background": "rgb(255, 253, 247)",
+        "ratio": 13.344325424732025,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".system-theme",
+        "foreground": "rgb(48, 46, 40)",
+        "background": "rgb(255, 253, 247)",
+        "ratio": 13.344325424732025,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".appearance-close",
+        "foreground": "rgb(255, 255, 255)",
+        "background": "rgb(129, 64, 125)",
+        "ratio": 7.087608919908529,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".appearance-icon border",
+        "ratio": 4.359316233609269,
+        "minimum": 3
+      },
+      {
+        "selector": "focus underline",
+        "ratio": 6.014050603208217,
+        "minimum": 3
+      }
+    ],
+    "libraryChecks": [
+      {
+        "selector": "h1",
+        "ratio": 6.3918198999113605,
+        "minimum": 4.5
+      },
+      {
+        "selector": "h3",
+        "ratio": 13.344325424732025,
+        "minimum": 4.5
+      },
+      {
+        "selector": "h3",
+        "ratio": 13.344325424732025,
+        "minimum": 4.5
+      },
+      {
+        "selector": "button",
+        "ratio": 13.344325424732025,
+        "minimum": 4.5
+      },
+      {
+        "selector": "button",
+        "ratio": 7.087608919908529,
+        "minimum": 4.5
+      },
+      {
+        "selector": "button",
+        "ratio": 6.967859363256414,
+        "minimum": 4.5
+      },
+      {
+        "selector": "button",
+        "ratio": 6.320089004887854,
+        "minimum": 4.5
+      },
+      {
+        "selector": "button",
+        "ratio": 6.320089004887854,
+        "minimum": 4.5
+      },
+      {
+        "selector": "button",
+        "ratio": 7.087608919908529,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".text-zinc-400",
+        "ratio": 6.320089004887854,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".text-zinc-400",
+        "ratio": 6.320089004887854,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".text-zinc-400",
+        "ratio": 6.320089004887854,
+        "minimum": 4.5
+      },
+      {
+        "selector": "[placeholder]",
+        "ratio": 5.797601324113662,
+        "minimum": 4.5
+      },
+      {
+        "selector": "[placeholder]",
+        "ratio": 5.797601324113662,
+        "minimum": 4.5
+      }
+    ]
+  },
+  {
+    "theme": "light",
+    "palette": "high-contrast",
+    "checks": [
+      {
+        "selector": ".reader-shell h2",
+        "foreground": "rgb(23, 24, 19)",
+        "background": "rgb(255, 253, 247)",
+        "ratio": 17.54814293185593,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".reader-shell h2",
+        "foreground": "rgb(23, 24, 19)",
+        "background": "rgb(255, 255, 255)",
+        "ratio": 17.849725128999417,
+        "minimum": 4.5
+      },
+      {
+        "selector": "[data-testid=\"position\"]",
+        "foreground": "rgb(52, 54, 46)",
+        "background": "rgb(255, 253, 247)",
+        "ratio": 12.051146619808183,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".reader-focus",
+        "foreground": "rgb(23, 24, 19)",
+        "background": "rgb(255, 253, 247)",
+        "ratio": 17.54814293185593,
+        "minimum": 4.5
+      },
+      {
+        "selector": "footer label span",
+        "foreground": "rgb(52, 54, 46)",
+        "background": "rgb(255, 253, 247)",
+        "ratio": 12.051146619808183,
+        "minimum": 4.5
+      },
+      {
+        "selector": "footer label span",
+        "foreground": "rgb(52, 54, 46)",
+        "background": "rgb(255, 253, 247)",
+        "ratio": 12.051146619808183,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".appearance-dialog p",
+        "foreground": "rgb(23, 24, 19)",
+        "background": "rgb(255, 255, 255)",
+        "ratio": 17.849725128999417,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".appearance-dialog p",
+        "foreground": "rgb(52, 54, 46)",
+        "background": "rgb(255, 255, 255)",
+        "ratio": 12.258257496999772,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".appearance-dialog legend",
+        "foreground": "rgb(23, 24, 19)",
+        "background": "rgb(255, 255, 255)",
+        "ratio": 17.849725128999417,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".palette-option span",
+        "foreground": "rgb(23, 24, 19)",
+        "background": "rgb(255, 255, 255)",
+        "ratio": 17.849725128999417,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".palette-option span",
+        "foreground": "rgb(23, 24, 19)",
+        "background": "rgb(255, 255, 255)",
+        "ratio": 17.849725128999417,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".palette-option span",
+        "foreground": "rgb(23, 24, 19)",
+        "background": "rgb(255, 255, 255)",
+        "ratio": 17.849725128999417,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".palette-option span",
+        "foreground": "rgb(23, 24, 19)",
+        "background": "rgb(255, 255, 255)",
+        "ratio": 17.849725128999417,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".system-theme",
+        "foreground": "rgb(23, 24, 19)",
+        "background": "rgb(255, 255, 255)",
+        "ratio": 17.849725128999417,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".appearance-close",
+        "foreground": "rgb(255, 255, 255)",
+        "background": "rgb(23, 24, 19)",
+        "ratio": 17.849725128999417,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".appearance-icon border",
+        "ratio": 17.849725128999417,
+        "minimum": 3
+      },
+      {
+        "selector": "focus underline",
+        "ratio": 17.54814293185593,
+        "minimum": 3
+      }
+    ],
+    "libraryChecks": [
+      {
+        "selector": "h1",
+        "ratio": 17.54814293185593,
+        "minimum": 4.5
+      },
+      {
+        "selector": "h3",
+        "ratio": 17.849725128999417,
+        "minimum": 4.5
+      },
+      {
+        "selector": "h3",
+        "ratio": 17.849725128999417,
+        "minimum": 4.5
+      },
+      {
+        "selector": "button",
+        "ratio": 17.849725128999417,
+        "minimum": 4.5
+      },
+      {
+        "selector": "button",
+        "ratio": 17.849725128999417,
+        "minimum": 4.5
+      },
+      {
+        "selector": "button",
+        "ratio": 17.849725128999417,
+        "minimum": 4.5
+      },
+      {
+        "selector": "button",
+        "ratio": 12.258257496999772,
+        "minimum": 4.5
+      },
+      {
+        "selector": "button",
+        "ratio": 12.258257496999772,
+        "minimum": 4.5
+      },
+      {
+        "selector": "button",
+        "ratio": 17.849725128999417,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".text-zinc-400",
+        "ratio": 12.258257496999772,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".text-zinc-400",
+        "ratio": 12.258257496999772,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".text-zinc-400",
+        "ratio": 12.258257496999772,
+        "minimum": 4.5
+      },
+      {
+        "selector": "[placeholder]",
+        "ratio": 12.051146619808183,
+        "minimum": 4.5
+      },
+      {
+        "selector": "[placeholder]",
+        "ratio": 12.051146619808183,
+        "minimum": 4.5
+      }
+    ]
+  },
+  {
+    "theme": "dark",
+    "palette": "standard",
+    "checks": [
+      {
+        "selector": ".reader-shell h2",
+        "foreground": "rgb(246, 243, 235)",
+        "background": "rgb(32, 35, 31)",
+        "ratio": 14.329780406541092,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".reader-shell h2",
+        "foreground": "rgb(246, 243, 235)",
+        "background": "rgb(43, 48, 42)",
+        "ratio": 12.14833385992095,
+        "minimum": 4.5
+      },
+      {
+        "selector": "[data-testid=\"position\"]",
+        "foreground": "rgb(193, 198, 185)",
+        "background": "rgb(32, 35, 31)",
+        "ratio": 9.114373476989194,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".reader-focus",
+        "foreground": "rgb(255, 182, 157)",
+        "background": "rgb(32, 35, 31)",
+        "ratio": 9.405201658500813,
+        "minimum": 4.5
+      },
+      {
+        "selector": "footer label span",
+        "foreground": "rgb(193, 198, 185)",
+        "background": "rgb(32, 35, 31)",
+        "ratio": 9.114373476989194,
+        "minimum": 4.5
+      },
+      {
+        "selector": "footer label span",
+        "foreground": "rgb(193, 198, 185)",
+        "background": "rgb(32, 35, 31)",
+        "ratio": 9.114373476989194,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".appearance-dialog p",
+        "foreground": "rgb(246, 243, 235)",
+        "background": "rgb(43, 48, 42)",
+        "ratio": 12.14833385992095,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".appearance-dialog p",
+        "foreground": "rgb(193, 198, 185)",
+        "background": "rgb(43, 48, 42)",
+        "ratio": 7.726877089611998,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".appearance-dialog legend",
+        "foreground": "rgb(246, 243, 235)",
+        "background": "rgb(43, 48, 42)",
+        "ratio": 12.14833385992095,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".palette-option span",
+        "foreground": "rgb(246, 243, 235)",
+        "background": "rgb(43, 48, 42)",
+        "ratio": 12.14833385992095,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".palette-option span",
+        "foreground": "rgb(246, 243, 235)",
+        "background": "rgb(43, 48, 42)",
+        "ratio": 12.14833385992095,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".palette-option span",
+        "foreground": "rgb(246, 243, 235)",
+        "background": "rgb(43, 48, 42)",
+        "ratio": 12.14833385992095,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".palette-option span",
+        "foreground": "rgb(246, 243, 235)",
+        "background": "rgb(43, 48, 42)",
+        "ratio": 12.14833385992095,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".system-theme",
+        "foreground": "rgb(246, 243, 235)",
+        "background": "rgb(43, 48, 42)",
+        "ratio": 12.14833385992095,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".appearance-close",
+        "foreground": "rgb(32, 35, 31)",
+        "background": "rgb(181, 209, 165)",
+        "ratio": 9.55518187509026,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".appearance-icon border",
+        "ratio": 4.675908349938123,
+        "minimum": 3
+      },
+      {
+        "selector": "focus underline",
+        "ratio": 9.405201658500813,
+        "minimum": 3
+      }
+    ],
+    "libraryChecks": [
+      {
+        "selector": "h1",
+        "ratio": 9.55518187509026,
+        "minimum": 4.5
+      },
+      {
+        "selector": "h3",
+        "ratio": 12.14833385992095,
+        "minimum": 4.5
+      },
+      {
+        "selector": "h3",
+        "ratio": 12.14833385992095,
+        "minimum": 4.5
+      },
+      {
+        "selector": "button",
+        "ratio": 12.14833385992095,
+        "minimum": 4.5
+      },
+      {
+        "selector": "button",
+        "ratio": 9.55518187509026,
+        "minimum": 4.5
+      },
+      {
+        "selector": "button",
+        "ratio": 8.100580484672,
+        "minimum": 4.5
+      },
+      {
+        "selector": "button",
+        "ratio": 7.726877089611998,
+        "minimum": 4.5
+      },
+      {
+        "selector": "button",
+        "ratio": 7.726877089611998,
+        "minimum": 4.5
+      },
+      {
+        "selector": "button",
+        "ratio": 9.55518187509026,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".text-zinc-400",
+        "ratio": 7.726877089611998,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".text-zinc-400",
+        "ratio": 7.726877089611998,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".text-zinc-400",
+        "ratio": 7.726877089611998,
+        "minimum": 4.5
+      },
+      {
+        "selector": "[placeholder]",
+        "ratio": 9.114373476989194,
+        "minimum": 4.5
+      },
+      {
+        "selector": "[placeholder]",
+        "ratio": 9.114373476989194,
+        "minimum": 4.5
+      }
+    ]
+  },
+  {
+    "theme": "dark",
+    "palette": "red-green",
+    "checks": [
+      {
+        "selector": ".reader-shell h2",
+        "foreground": "rgb(246, 243, 235)",
+        "background": "rgb(32, 35, 31)",
+        "ratio": 14.329780406541092,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".reader-shell h2",
+        "foreground": "rgb(246, 243, 235)",
+        "background": "rgb(43, 48, 42)",
+        "ratio": 12.14833385992095,
+        "minimum": 4.5
+      },
+      {
+        "selector": "[data-testid=\"position\"]",
+        "foreground": "rgb(193, 198, 185)",
+        "background": "rgb(32, 35, 31)",
+        "ratio": 9.114373476989194,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".reader-focus",
+        "foreground": "rgb(255, 193, 133)",
+        "background": "rgb(32, 35, 31)",
+        "ratio": 10.001921429038116,
+        "minimum": 4.5
+      },
+      {
+        "selector": "footer label span",
+        "foreground": "rgb(193, 198, 185)",
+        "background": "rgb(32, 35, 31)",
+        "ratio": 9.114373476989194,
+        "minimum": 4.5
+      },
+      {
+        "selector": "footer label span",
+        "foreground": "rgb(193, 198, 185)",
+        "background": "rgb(32, 35, 31)",
+        "ratio": 9.114373476989194,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".appearance-dialog p",
+        "foreground": "rgb(246, 243, 235)",
+        "background": "rgb(43, 48, 42)",
+        "ratio": 12.14833385992095,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".appearance-dialog p",
+        "foreground": "rgb(193, 198, 185)",
+        "background": "rgb(43, 48, 42)",
+        "ratio": 7.726877089611998,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".appearance-dialog legend",
+        "foreground": "rgb(246, 243, 235)",
+        "background": "rgb(43, 48, 42)",
+        "ratio": 12.14833385992095,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".palette-option span",
+        "foreground": "rgb(246, 243, 235)",
+        "background": "rgb(43, 48, 42)",
+        "ratio": 12.14833385992095,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".palette-option span",
+        "foreground": "rgb(246, 243, 235)",
+        "background": "rgb(43, 48, 42)",
+        "ratio": 12.14833385992095,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".palette-option span",
+        "foreground": "rgb(246, 243, 235)",
+        "background": "rgb(43, 48, 42)",
+        "ratio": 12.14833385992095,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".palette-option span",
+        "foreground": "rgb(246, 243, 235)",
+        "background": "rgb(43, 48, 42)",
+        "ratio": 12.14833385992095,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".system-theme",
+        "foreground": "rgb(246, 243, 235)",
+        "background": "rgb(43, 48, 42)",
+        "ratio": 12.14833385992095,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".appearance-close",
+        "foreground": "rgb(32, 35, 31)",
+        "background": "rgb(158, 213, 255)",
+        "ratio": 10.150863075694085,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".appearance-icon border",
+        "ratio": 4.675908349938123,
+        "minimum": 3
+      },
+      {
+        "selector": "focus underline",
+        "ratio": 10.001921429038116,
+        "minimum": 3
+      }
+    ],
+    "libraryChecks": [
+      {
+        "selector": "h1",
+        "ratio": 10.150863075694085,
+        "minimum": 4.5
+      },
+      {
+        "selector": "h3",
+        "ratio": 12.14833385992095,
+        "minimum": 4.5
+      },
+      {
+        "selector": "h3",
+        "ratio": 12.14833385992095,
+        "minimum": 4.5
+      },
+      {
+        "selector": "button",
+        "ratio": 12.14833385992095,
+        "minimum": 4.5
+      },
+      {
+        "selector": "button",
+        "ratio": 10.150863075694085,
+        "minimum": 4.5
+      },
+      {
+        "selector": "button",
+        "ratio": 8.605580135309392,
+        "minimum": 4.5
+      },
+      {
+        "selector": "button",
+        "ratio": 7.726877089611998,
+        "minimum": 4.5
+      },
+      {
+        "selector": "button",
+        "ratio": 7.726877089611998,
+        "minimum": 4.5
+      },
+      {
+        "selector": "button",
+        "ratio": 10.150863075694085,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".text-zinc-400",
+        "ratio": 7.726877089611998,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".text-zinc-400",
+        "ratio": 7.726877089611998,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".text-zinc-400",
+        "ratio": 7.726877089611998,
+        "minimum": 4.5
+      },
+      {
+        "selector": "[placeholder]",
+        "ratio": 9.114373476989194,
+        "minimum": 4.5
+      },
+      {
+        "selector": "[placeholder]",
+        "ratio": 9.114373476989194,
+        "minimum": 4.5
+      }
+    ]
+  },
+  {
+    "theme": "dark",
+    "palette": "blue-yellow",
+    "checks": [
+      {
+        "selector": ".reader-shell h2",
+        "foreground": "rgb(246, 243, 235)",
+        "background": "rgb(32, 35, 31)",
+        "ratio": 14.329780406541092,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".reader-shell h2",
+        "foreground": "rgb(246, 243, 235)",
+        "background": "rgb(43, 48, 42)",
+        "ratio": 12.14833385992095,
+        "minimum": 4.5
+      },
+      {
+        "selector": "[data-testid=\"position\"]",
+        "foreground": "rgb(193, 198, 185)",
+        "background": "rgb(32, 35, 31)",
+        "ratio": 9.114373476989194,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".reader-focus",
+        "foreground": "rgb(138, 223, 209)",
+        "background": "rgb(32, 35, 31)",
+        "ratio": 10.25747140254292,
+        "minimum": 4.5
+      },
+      {
+        "selector": "footer label span",
+        "foreground": "rgb(193, 198, 185)",
+        "background": "rgb(32, 35, 31)",
+        "ratio": 9.114373476989194,
+        "minimum": 4.5
+      },
+      {
+        "selector": "footer label span",
+        "foreground": "rgb(193, 198, 185)",
+        "background": "rgb(32, 35, 31)",
+        "ratio": 9.114373476989194,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".appearance-dialog p",
+        "foreground": "rgb(246, 243, 235)",
+        "background": "rgb(43, 48, 42)",
+        "ratio": 12.14833385992095,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".appearance-dialog p",
+        "foreground": "rgb(193, 198, 185)",
+        "background": "rgb(43, 48, 42)",
+        "ratio": 7.726877089611998,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".appearance-dialog legend",
+        "foreground": "rgb(246, 243, 235)",
+        "background": "rgb(43, 48, 42)",
+        "ratio": 12.14833385992095,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".palette-option span",
+        "foreground": "rgb(246, 243, 235)",
+        "background": "rgb(43, 48, 42)",
+        "ratio": 12.14833385992095,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".palette-option span",
+        "foreground": "rgb(246, 243, 235)",
+        "background": "rgb(43, 48, 42)",
+        "ratio": 12.14833385992095,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".palette-option span",
+        "foreground": "rgb(246, 243, 235)",
+        "background": "rgb(43, 48, 42)",
+        "ratio": 12.14833385992095,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".palette-option span",
+        "foreground": "rgb(246, 243, 235)",
+        "background": "rgb(43, 48, 42)",
+        "ratio": 12.14833385992095,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".system-theme",
+        "foreground": "rgb(246, 243, 235)",
+        "background": "rgb(43, 48, 42)",
+        "ratio": 12.14833385992095,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".appearance-close",
+        "foreground": "rgb(32, 35, 31)",
+        "background": "rgb(240, 181, 231)",
+        "ratio": 9.434304766984788,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".appearance-icon border",
+        "ratio": 4.675908349938123,
+        "minimum": 3
+      },
+      {
+        "selector": "focus underline",
+        "ratio": 10.25747140254292,
+        "minimum": 3
+      }
+    ],
+    "libraryChecks": [
+      {
+        "selector": "h1",
+        "ratio": 9.434304766984788,
+        "minimum": 4.5
+      },
+      {
+        "selector": "h3",
+        "ratio": 12.14833385992095,
+        "minimum": 4.5
+      },
+      {
+        "selector": "h3",
+        "ratio": 12.14833385992095,
+        "minimum": 4.5
+      },
+      {
+        "selector": "button",
+        "ratio": 12.14833385992095,
+        "minimum": 4.5
+      },
+      {
+        "selector": "button",
+        "ratio": 9.434304766984788,
+        "minimum": 4.5
+      },
+      {
+        "selector": "button",
+        "ratio": 7.998104701817941,
+        "minimum": 4.5
+      },
+      {
+        "selector": "button",
+        "ratio": 7.726877089611998,
+        "minimum": 4.5
+      },
+      {
+        "selector": "button",
+        "ratio": 7.726877089611998,
+        "minimum": 4.5
+      },
+      {
+        "selector": "button",
+        "ratio": 9.434304766984788,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".text-zinc-400",
+        "ratio": 7.726877089611998,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".text-zinc-400",
+        "ratio": 7.726877089611998,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".text-zinc-400",
+        "ratio": 7.726877089611998,
+        "minimum": 4.5
+      },
+      {
+        "selector": "[placeholder]",
+        "ratio": 9.114373476989194,
+        "minimum": 4.5
+      },
+      {
+        "selector": "[placeholder]",
+        "ratio": 9.114373476989194,
+        "minimum": 4.5
+      }
+    ]
+  },
+  {
+    "theme": "dark",
+    "palette": "high-contrast",
+    "checks": [
+      {
+        "selector": ".reader-shell h2",
+        "foreground": "rgb(255, 255, 255)",
+        "background": "rgb(16, 18, 15)",
+        "ratio": 18.82644482285008,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".reader-shell h2",
+        "foreground": "rgb(255, 255, 255)",
+        "background": "rgb(16, 18, 15)",
+        "ratio": 18.82644482285008,
+        "minimum": 4.5
+      },
+      {
+        "selector": "[data-testid=\"position\"]",
+        "foreground": "rgb(255, 255, 255)",
+        "background": "rgb(16, 18, 15)",
+        "ratio": 18.82644482285008,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".reader-focus",
+        "foreground": "rgb(255, 255, 255)",
+        "background": "rgb(16, 18, 15)",
+        "ratio": 18.82644482285008,
+        "minimum": 4.5
+      },
+      {
+        "selector": "footer label span",
+        "foreground": "rgb(255, 255, 255)",
+        "background": "rgb(16, 18, 15)",
+        "ratio": 18.82644482285008,
+        "minimum": 4.5
+      },
+      {
+        "selector": "footer label span",
+        "foreground": "rgb(255, 255, 255)",
+        "background": "rgb(16, 18, 15)",
+        "ratio": 18.82644482285008,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".appearance-dialog p",
+        "foreground": "rgb(255, 255, 255)",
+        "background": "rgb(16, 18, 15)",
+        "ratio": 18.82644482285008,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".appearance-dialog p",
+        "foreground": "rgb(255, 255, 255)",
+        "background": "rgb(16, 18, 15)",
+        "ratio": 18.82644482285008,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".appearance-dialog legend",
+        "foreground": "rgb(255, 255, 255)",
+        "background": "rgb(16, 18, 15)",
+        "ratio": 18.82644482285008,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".palette-option span",
+        "foreground": "rgb(255, 255, 255)",
+        "background": "rgb(16, 18, 15)",
+        "ratio": 18.82644482285008,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".palette-option span",
+        "foreground": "rgb(255, 255, 255)",
+        "background": "rgb(16, 18, 15)",
+        "ratio": 18.82644482285008,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".palette-option span",
+        "foreground": "rgb(255, 255, 255)",
+        "background": "rgb(16, 18, 15)",
+        "ratio": 18.82644482285008,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".palette-option span",
+        "foreground": "rgb(255, 255, 255)",
+        "background": "rgb(16, 18, 15)",
+        "ratio": 18.82644482285008,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".system-theme",
+        "foreground": "rgb(255, 255, 255)",
+        "background": "rgb(16, 18, 15)",
+        "ratio": 18.82644482285008,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".appearance-close",
+        "foreground": "rgb(32, 35, 31)",
+        "background": "rgb(255, 255, 255)",
+        "ratio": 15.889665387965572,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".appearance-icon border",
+        "ratio": 18.82644482285008,
+        "minimum": 3
+      },
+      {
+        "selector": "focus underline",
+        "ratio": 18.82644482285008,
+        "minimum": 3
+      }
+    ],
+    "libraryChecks": [
+      {
+        "selector": "h1",
+        "ratio": 18.82644482285008,
+        "minimum": 4.5
+      },
+      {
+        "selector": "h3",
+        "ratio": 18.82644482285008,
+        "minimum": 4.5
+      },
+      {
+        "selector": "h3",
+        "ratio": 18.82644482285008,
+        "minimum": 4.5
+      },
+      {
+        "selector": "button",
+        "ratio": 18.82644482285008,
+        "minimum": 4.5
+      },
+      {
+        "selector": "button",
+        "ratio": 15.889665387965572,
+        "minimum": 4.5
+      },
+      {
+        "selector": "button",
+        "ratio": 18.82644482285008,
+        "minimum": 4.5
+      },
+      {
+        "selector": "button",
+        "ratio": 18.82644482285008,
+        "minimum": 4.5
+      },
+      {
+        "selector": "button",
+        "ratio": 18.82644482285008,
+        "minimum": 4.5
+      },
+      {
+        "selector": "button",
+        "ratio": 15.889665387965572,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".text-zinc-400",
+        "ratio": 18.82644482285008,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".text-zinc-400",
+        "ratio": 18.82644482285008,
+        "minimum": 4.5
+      },
+      {
+        "selector": ".text-zinc-400",
+        "ratio": 18.82644482285008,
+        "minimum": 4.5
+      },
+      {
+        "selector": "[placeholder]",
+        "ratio": 18.82644482285008,
+        "minimum": 4.5
+      },
+      {
+        "selector": "[placeholder]",
+        "ratio": 18.82644482285008,
+        "minimum": 4.5
+      }
+    ]
+  }
+]

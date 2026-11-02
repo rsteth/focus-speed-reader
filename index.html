@@ -2,6 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <script>
+      (() => {
+        let theme, palette;
+        try { theme = localStorage.getItem('focus-reader.theme.v1'); palette = localStorage.getItem('focus-reader.palette.v1'); } catch {}
+        const explicit = theme === 'light' || theme === 'dark';
+        document.documentElement.dataset.theme = explicit ? theme : (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.dataset.themeExplicit = String(explicit);
+        document.documentElement.dataset.palette = ['standard', 'red-green', 'blue-yellow', 'high-contrast'].includes(palette) ? palette : 'standard';
+      })();
+    </script>
     <link rel="icon" type="image/png" sizes="64x64" href="%BASE_URL%favicon.png" />
     <script type="module" src="/src/favicon.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />

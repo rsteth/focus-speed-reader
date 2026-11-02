@@ -1,3 +1,4 @@
+import AppearanceControls from './AppearanceControls';
 import React, { useState, useRef } from 'react';
 import type { Book } from '../types';
 import { Plus, Trash2, BookOpen, FileText, Download, Upload, Loader2 } from 'lucide-react';
@@ -89,10 +90,11 @@ const Library: React.FC<LibraryProps> = ({ books, onOpen, onAdd, onDelete, onRef
     <div className="p-4 md:p-8 max-w-5xl mx-auto">
       <div className="flex items-center justify-between flex-wrap gap-4 mb-8">
         <h1 className="text-2xl md:text-3xl font-bold text-blue-500">Focus Speed Reader</h1>
-        <div className="flex gap-2">
-            <label className="p-2 bg-zinc-900 rounded hover:bg-zinc-800 cursor-pointer" title="Restore library from JSON backup">
+        <div className="flex flex-wrap gap-2 items-center">
+            <AppearanceControls />
+            <label className="relative p-2 bg-zinc-900 rounded hover:bg-zinc-800 cursor-pointer" title="Restore library from JSON backup">
                 <Upload className="w-5 h-5 inline-block" /><span className="ml-2">Restore</span>
-                <input type="file" accept=".json" onChange={handleImport} className="hidden" />
+                <input type="file" accept=".json" onChange={handleImport} className="restore-input" aria-label="Restore library from JSON backup" />
             </label>
             <button onClick={handleExport} className="p-2 bg-zinc-900 rounded hover:bg-zinc-800" title="Download library backup (JSON)" disabled={!books.length || isProcessing} aria-label="Download library backup (JSON)">
                 <Download className="w-5 h-5 inline-block" /><span className="ml-2">Back up</span>
@@ -109,6 +111,7 @@ const Library: React.FC<LibraryProps> = ({ books, onOpen, onAdd, onDelete, onRef
             <h3 className="text-xl font-semibold mb-4">Add New Content</h3>
             <div className="space-y-4">
                 <input 
+                    aria-label="Title"
                     type="text" 
                     placeholder="Title" 
                     className="w-full p-3 bg-zinc-950 border border-zinc-800 rounded focus:border-blue-500 outline-none"
@@ -133,6 +136,7 @@ const Library: React.FC<LibraryProps> = ({ books, onOpen, onAdd, onDelete, onRef
 
                 {inputType === 'paste' ? (
                     <textarea 
+                        aria-label="Text to read"
                         className="w-full p-3 h-40 bg-zinc-950 border border-zinc-800 rounded focus:border-blue-500 outline-none font-mono text-sm"
                         placeholder="Paste your text here..."
                         value={textInput}
@@ -162,7 +166,7 @@ const Library: React.FC<LibraryProps> = ({ books, onOpen, onAdd, onDelete, onRef
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {books.map(book => (
-            <div key={book.id} onClick={() => onOpen(book)} className="group relative bg-zinc-900 p-5 rounded-xl border border-zinc-800 hover:border-blue-500 cursor-pointer transition-all hover:shadow-lg hover:shadow-blue-500/10">
+            <div key={book.id} onClick={() => onOpen(book)} onKeyDown={event => { if (event.target === event.currentTarget && (event.key === 'Enter' || event.key === ' ')) { event.preventDefault(); onOpen(book); } }} tabIndex={0} role="group" aria-label={`Open ${book.title}`} className="group relative bg-zinc-900 p-5 rounded-xl border border-zinc-800 hover:border-blue-500 cursor-pointer transition-shadow hover:shadow-lg hover:shadow-blue-500/10">
                 <div className="flex items-start justify-between mb-3">
                     <div className="p-3 bg-zinc-950 rounded-lg text-blue-400">
                         {book.type === 'epub' ? <BookOpen className="w-6 h-6" /> : <FileText className="w-6 h-6" />}
